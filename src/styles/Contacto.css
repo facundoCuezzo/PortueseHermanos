@@ -1,0 +1,39 @@
+.grid-container {
+    display: flex; /* Cambiado a flexbox */
+    flex-direction: row; /* Para hacer los ítems horizontales */
+    gap: 115px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 60px;
+    max-width: 80%; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra el contenedor en la página */
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .grid-item i {
+    font-size: 4rem; /* Tamaño del icono */
+    margin-bottom: 15px;
+    color: #333; /* Color del icono */
+  }
+  
+  .grid-item p,
+  .grid-item a {
+    color: #000000; /* Negro */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 1rem; /* Tamaño del texto */
+    transition: color 0.3s ease-in-out; /* Transición suave para el color */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+  }
+  
+  .grid-item p:hover,
+  .grid-item a:hover {
+    color: #00d4ff; /* Color celeste brillante al pasar el mouse */
+  }
+  

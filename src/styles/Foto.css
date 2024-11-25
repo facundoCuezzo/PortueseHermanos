@@ -1,0 +1,63 @@
+/* Estilos para el contenedor principal */
+.foto {
+  position: relative; /* Necesario para posicionar contenido interno */
+  width: 100%; /* Ancho del componente */
+  height: 18cm; /* Alto del componente */
+  overflow: hidden; /* Oculta el contenido que exceda */
+}
+
+/* Estilos para la imagen */
+.foto img {
+  width: 100%; /* Imagen ocupa el ancho completo */
+  height: 100%;
+  object-fit: cover; /* Ajuste proporcional */
+}
+
+/* Estilos para el contenido superpuesto */
+.contenido {
+  position:absolute; /* Posición relativa a .foto */
+  bottom: 0; /* En la parte inferior */
+  background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro */
+  color: white; /* Texto blanco */
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 20px; /* Espaciado interno */
+  text-align:center; /* Texto centrado */
+}
+
+/* Estilos para el título */
+.contenido h2 {
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 10px; /* Espaciado inferior */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Estilos para el párrafo */
+.contenido p {
+  font-size: 1.2rem; /* Tamaño de fuente ajustado */
+  margin-bottom: 20px; /* Espaciado inferior */
+  color: #f0f0f0; /* Color ligeramente más claro */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra de texto suave */
+  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+  width: 50%; /* Ajuste de ancho para asegurar 3 renglones */ margin: 0 auto; /* Centrar el texto horizontalmente */
+}
+
+
+/* Estilos para el botón */
+.contenido button {
+  background-color: #ff9900; /* Color de fondo llamativo */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Relleno */
+  font-size: 1.1rem; /* Tamaño de fuente ajustado */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  cursor: pointer; /* Cursor de mano al pasar */
+  transition: background-color 0.3s ease-in-out; /* Transición suave para el color */
+  margin-top: 20px; /* Añade margen superior para separarlo del `p` */
+}
+
+/* Efecto hover para el botón */
+.contenido button:hover {
+  background-color: #cc7a00; /* Fondo más oscuro al pasar el mouse */
+}

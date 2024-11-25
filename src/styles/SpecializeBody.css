@@ -1,0 +1,67 @@
+/* Contenedor principal */
+.specializeBody-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120%;
+    max-width: 1300px; /* Ajusta según sea necesario para el ancho */
+    height: 7cm; /* Altura del contenedor */
+    margin: 3cm auto 20px; /* Añade margen superior de 3cm */
+    background-color: #f5f5f5; /* Fondo claro para destacar el texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    position: relative; /* Necesario para el pseudo-elemento */
+  }
+  
+  /* Línea divisoria */
+  .specializeBody-contenedor::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+  }
+  
+  /* Estilos para el título */
+  .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3; /* Hace el contenedor del título un 30% más ancho */
+    font-family: 'Raleway', sans-serif; /* Fuente estilizada para el título */
+    font-size: 1.7rem; /* Tamaño de fuente */
+    font-weight: 700; /* Negrita */
+    margin: 0; /* Sin margen */
+    color: #333; /* Color del texto */
+    text-align: left; /* Alineación a la izquierda */
+    padding-right: 20px; /* Espaciado interno para la línea divisoria */
+  }
+  
+  /* Estilos para la descripción */
+  .descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2; /* Hace el contenedor de la descripción un 20% más ancho */
+    font-family: 'Open Sans', sans-serif; /* Fuente estilizada para la descripción */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+    margin: 0; /* Sin margen */
+    text-align: left; /* Alineación a la izquierda */
+    max-width: 100%; /* Ajusta el ancho para el formato */
+    line-height: 1.6; /* Mejorar legibilidad */
+    padding-left: 20px; /* Espaciado interno para la línea divisoria */
+  }
+  
+  /* Estilos para la imagen dentro de la descripción */
+  .imagen-descripcion {
+    width: 2cm; /* Ancho de la imagen */
+    height: 2cm; /* Alto de la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    margin-left: 10px; /* Espaciado izquierdo para la imagen */
+  }
+  

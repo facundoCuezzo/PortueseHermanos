@@ -1,0 +1,25 @@
+
+.scroll_sup {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.no-margin.brand-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 10px;
+    margin-top: .3cm;
+    width: max-content;
+}
+
+.brand-carousel li {
+    flex: 0 0 calc(160px + 10px); 
+    margin-right: 10px; 
+}
+
+.brand-carousel img {
+    max-width: 110px; 
+    height: auto;
+}
