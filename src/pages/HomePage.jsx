@@ -10,13 +10,12 @@ import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <>
-      <CustomNavbar />
+    
       <Foto />
       <Scroll />
       <SpecializeBody />
       <GalleryServices />
-      <Contacto />
-      <Footer />
+     
     </>
   );
 }
