@@ -3,7 +3,7 @@
     color: #ffffff !important; /* Más blanco */
     font-weight: bold; /* Texto en negrita */
     text-transform: uppercase; /* Texto en mayúsculas */
-    font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente */
     transition: color 0.3s ease-in-out; /* Transición suave para el color */
   }
   

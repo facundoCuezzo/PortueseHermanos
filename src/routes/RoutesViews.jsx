@@ -4,7 +4,9 @@ import AboutUs from "../pages/AboutUs"
 import CustomNavbar from "../components/Navbar"
 import Contacto from "../components/Contacto"
 import Footer from "../components/Footer"
-import ErrorPage from "../pages/ErrorPage"
+import PageRVE from "../pages/PageRVE"
+import PageAlineadoBalanceo from "../pages/PageAlineadoBalanceo"
+
 
 
 const RoutesViews = () => {
@@ -15,6 +17,8 @@ const RoutesViews = () => {
    <Routes>
     <Route path='/' element={<HomePage/>}/>
     <Route path='SobreNosotros' element= {<AboutUs/>} />
+    <Route path='ReparacionElasticos' element= {<PageRVE/>} />
+    <Route path='Alineado-Balanceo' element= {<PageAlineadoBalanceo />} />
     
    </Routes>
    

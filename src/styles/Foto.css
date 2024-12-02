@@ -2,7 +2,7 @@
 .foto {
   position: relative; /* Necesario para posicionar contenido interno */
   width: 100%; /* Ancho del componente */
-  height: 18cm; /* Alto del componente */
+  height: 20.5cm; /* Alto del componente */
   overflow: hidden; /* Oculta el contenido que exceda */
 }
 

@@ -1,0 +1,74 @@
+/* styles/AlineadoBalanceo.css */
+.descripcion-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    max-width: 1250px; /* Ajusta el ancho máximo según tus necesidades */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-principal {
+    text-align: left;
+    font-size: 2.5em;
+    color: #000000;
+    text-shadow: 2px 2px #aaa;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .titulo-seccion {
+    font-size: 1.8em;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  p, ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Estilos para la sección de servicios */
+  .servicios-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .servicios-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .servicios-image {
+    flex: 1;
+  }
+  
+  .alineado-img {
+    width: 11cm; /* Ajusta el ancho de la imagen a 11 cm */
+    height: 6cm; /* Ajusta la altura de la imagen a 6 cm */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

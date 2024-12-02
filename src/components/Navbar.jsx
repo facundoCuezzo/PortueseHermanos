@@ -17,15 +17,15 @@ const CustomNavbar = () => {
             <Nav.Link as={NavLink} to="/" className="nav-link">Inicio</Nav.Link>
             <Nav.Link as={NavLink} to="/productos" className="nav-link">Productos</Nav.Link>
             <NavDropdown title="Servicios" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to="/fabrica" className="nav-link">Fabricacion</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/reparacion-venta-elasticos" className="nav-link">Reparacion y venta de elásticos</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/amortiguadores-frenos" className="nav-link">Amortiguadores frenos</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/alineados" className="nav-link">Alineados</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/balanceo-reparacion-automotores" className="nav-link">Balanceo reparación de automotores</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/ventas-repuestos" className="nav-link">Ventas de repuestos</NavDropdown.Item>
+              
+              <NavDropdown.Item as={NavLink} to="/reparacion-venta-elasticos" className="nav-link">Reparación y venta de elásticos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/alineado-balanceo" className="nav-link">Alineado y Balanceo</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/amortiguadores" className="nav-link">Amortiguadores</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/suspension-neumaticos" className="nav-link">Suspensión y Neumáticos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/fabricacion-elasticos" className="nav-link">Fabricación de elásticos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/frenos" className="nav-link">Frenos</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/ventas-repuestos" className="nav-link">Venta de repuestos</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/reparacion-tren-delantero" className="nav-link">Reparación de tren delantero</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/colocacion-tercer-eje" className="nav-link">Colocación de tercer eje</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/enderezado-chasis" className="nav-link">Enderezado de chasis</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={NavLink} to="/SobreNosotros" className="nav-link">Sobre Nosotros</Nav.Link>
           </Nav>

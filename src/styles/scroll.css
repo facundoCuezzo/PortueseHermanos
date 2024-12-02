@@ -16,10 +16,10 @@
 
 .brand-carousel li {
     flex: 0 0 calc(160px + 10px); 
-    margin-right: 10px; 
+    margin-right: 80px; 
 }
 
 .brand-carousel img {
-    max-width: 110px; 
+    max-width: 120px; 
     height: auto;
 }
