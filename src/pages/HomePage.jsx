@@ -1,10 +1,11 @@
 import React from 'react';
-import CustomNavbar from '../components/Navbar';
 import Foto from '../components/box';
 import Scroll from '../components/scroll';
 import SpecializeBody from '../components/SpecializeBody';
 import GalleryServices from '../components/GalleryServices';
-
+import GoogleMaps from '../components/googleMaps'
+import WpFloat from '../components/WpFloat';
+import Advantages from '../components/Advantages';
 
 const HomePage = () => {
   return (
@@ -14,7 +15,10 @@ const HomePage = () => {
       <Scroll />
       <SpecializeBody />
       <GalleryServices />
-     
+      <GoogleMaps />
+      <WpFloat />
+      <Advantages />
+
     </>
   );
 }
