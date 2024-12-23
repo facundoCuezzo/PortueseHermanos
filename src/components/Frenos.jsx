@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css'; // Reutilizando el mismo CSS
-import logoFrenos from '../assets/amortiguadores-frenos.jpeg'; // Usando la misma imagen para ilustrar
+import llantas from '../assets/llantas.jpg'; // Usando la misma imagen para ilustrar
 
 const Frenos = () => {
   return (
@@ -10,7 +10,7 @@ const Frenos = () => {
       
       <div className="position-relative">
         <img 
-          src={logoFrenos} 
+          src={llantas} 
           alt="Frenos" 
           className="float-end ms-3 mb-3 img-fluid rounded" 
           style={{ maxWidth: '300px' }} 

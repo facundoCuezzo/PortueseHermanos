@@ -33,6 +33,7 @@ const RoutesViews = () => {
     <Route path='ventas-repuestos' element= {<VentaRepuestos />} />
     <Route path='reparacion-tren-delantero' element= {<PageTrenDel />} />
     
+    
    </Routes>
    
    <Contacto />

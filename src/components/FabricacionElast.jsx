@@ -1,8 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css'; // Puedes reutilizar el mismo CSS
-import logoAmortiguadores from '../assets/fabricacionElasticos.jpg'; // Reutilizando la misma imagen
-
+import imagenElasticos from '../assets/elasticosfoto2.jpg';
 
 const FabricacionElasticos = () => {
   return (
@@ -22,7 +21,7 @@ const FabricacionElasticos = () => {
           </p>
         </div>
         <div className="col-md-4 text-center">
-          <img src={logoAmortiguadores} alt="Elásticos para Camiones" className="alineado-img" />
+          <img src={imagenElasticos} alt="Elásticos para Camiones" className="alineado-img" />
         </div>
       </div>
 

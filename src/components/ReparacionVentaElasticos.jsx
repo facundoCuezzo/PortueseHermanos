@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ReparacionVentaElasticos.css'; // Asegúrate de crear este archivo CSS para los estilos personalizados
-import logoElasticos from '../assets/Reparación-venta-elásticos..jpg';
+import logoElasticos from '../assets/elasticosfoto1.jpg';
 
 
 

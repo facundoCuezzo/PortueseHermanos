@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css'; // Usando el mismo CSS
-import logoRepuestos from '../assets/venta-repuestos.jpeg'; // Imagen ilustrativa
+import logoRepuestos from '../assets/respuestos2.jpg'; // Imagen ilustrativa
 
 const VentaRepuestos = () => {
   return (

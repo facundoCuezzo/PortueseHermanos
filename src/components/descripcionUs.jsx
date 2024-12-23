@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/DescripcionUs.css'; // Archivo CSS para los estilos
-import logoEmpresa from '../assets/logo.jpg';
+import logoRojo from "../assets/rojo.png";
 
 
 const DescripcionUs = () => {
@@ -23,7 +23,7 @@ const DescripcionUs = () => {
           </ul>
         </div>
         <div className="servicios-image">
-          <img src={logoEmpresa} alt="Nuestros Servicios" />
+          <img src={logoRojo} alt="Nuestros Servicios" />
         </div>
       </div>
 

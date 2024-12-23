@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css';
-import logoAlineado from '../assets/Balanceo-reparación-automotores..jpeg';
+import logoAlineado from '../assets/empleado1.jpg';
 
 const AlineadoBalanceo = () => {
   return (

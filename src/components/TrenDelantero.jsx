@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css'; // Usando el mismo CSS
-import logoTrenDelantero from '../assets/Reparación-tren-delantero.jpeg'; // Imagen ilustrativa
+import empleado3 from '../assets/empleado3.jpg'; // Imagen ilustrativa
 
 const ReparacionTrenDelantero = () => {
   return (
@@ -10,7 +10,7 @@ const ReparacionTrenDelantero = () => {
 
       <div className="position-relative">
         <img 
-          src={logoTrenDelantero} 
+          src={empleado3} 
           alt="Tren Delantero" 
           className="float-end ms-3 mb-3 img-fluid rounded" 
           style={{ maxWidth: '400px' }} 

@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css'; // Puedes reutilizar el mismo CSS
-import logoAmortiguadores from '../assets/amortiguadores-frenos.jpeg';
+
+import logoAmortiguadores from '../assets/elasticosfoto2.jpg';
 
 const Amortiguadores = () => {
   return (
