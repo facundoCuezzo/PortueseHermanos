@@ -1,42 +1,103 @@
-/* CustomNavbar.css */
+/* 
 .navbar-dark .navbar-brand {
-    color: #ffffff !important; /* Más blanco */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    font-size: 1.6rem; /* Aumenta el tamaño de la fuente */
-    transition: color 0.3s ease-in-out; /* Transición suave para el color */
+    color: #ffffff !important; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: 1.6rem; 
+    transition: color 0.3s ease-in-out; 
   }
   
   .navbar-dark .navbar-brand:hover {
-    color: #f8f9fa !important; /* Color más claro al pasar el mouse */
+    color: #f8f9fa !important; 
   }
   
   .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff !important; /* Más blanco */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
-    transition: color 0.3s ease-in-out; /* Transición suave para el color */
+    color: #ffffff !important; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    font-size: 1.1rem; 
+    transition: color 0.3s ease-in-out; /* 
+   */
+   .navbar {
+    background-color:  #fa220a;  /* Fondo rojo */
   }
   
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #f8f9fa !important; /* Color más claro al pasar el mouse */
+  .navbar-brand, .nav-link, .nav-dropdown .dropdown-item {
+    background-color: #fa220a;
+    color:  #fbff05!important;  /* Texto amarillo */
+    font-weight: bold;  /* Negrita para mejor visibilidad */
+    font-size: 1.5rem;  /* Tamaño de la fuente aumentado */
+  }
+  /* Contenedor del título */
+  .tituloProductoS {
+    display: flex;
+    justify-content: center; /* Alinea el contenido al centro horizontalmente */
+    margin: 20px 0; /* Márgenes superior e inferior */
   }
   
-  .navbar-dark .navbar-nav .nav-item .dropdown-menu {
-    background-color: #343a40; /* Fondo oscuro para el dropdown */
-    border: none;
+  /* Título subrayado y centrado */
+  .tituloProductoS h1 {
+    color: #fbff05; /* Color del texto */
+    text-align: center;
+    text-decoration: underline; /* Subrayado */
+    margin: 0;
+    cursor: move; /* Cambia el cursor para indicar que se puede mover */
   }
   
-  .navbar-dark .navbar-nav .nav-item .dropdown-item {
-    color: #ffffff !important; /* Más blanco */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: capitalize; /* Capitalizar el texto */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición suave */
+  /* Añadir esta clase para mover el título a la izquierda */
+  .tituloProductoS.left {
+    justify-content: flex-start;
+    margin-left: -10px;  /* Ajusta según sea necesario */
+    padding-left: 0px;  /* Ajusta según sea necesario */
   }
   
-  .navbar-dark .navbar-nav .nav-item .dropdown-item:hover {
-    background-color: #495057; /* Fondo más claro al pasar el mouse */
-    color: #f8f9fa !important; /* Color más claro al pasar el mouse */
+  /* Añadir esta clase para mover el título a la derecha */
+  .tituloProductoS.right {
+    justify-content: flex-end;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .tituloProductoS {
+      justify-content: center;
+      margin: 10px 0; /* Ajusta los márgenes para pantallas pequeñas */
+    }
+    
+    .tituloProductoS.left {
+      margin-left: -5%; /* Ajuste menor para pantallas pequeñas */
+    }
+  
+    .tituloProductoS h1 {
+      font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+  }
+  /* Cambios de color en hover */
+  .navbar-brand:hover, .nav-link:hover {
+    color:  #fbff05!important;  /* Amarillo más claro en hover */
+  }
+  
+  .dropdown-item:hover{
+    background-color: #3107ec; /* Fondo gris al pasar el ratón */
+    color: #fbff05 !important; /* Mantiene el texto amarillo */
+  }
+  
+  /* Aseguramos que el texto en el Dropdown también sea amarillo */
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color:  #fbff05!important;  /* Texto amarillo para enlaces nav */
+    font-size: 1.5rem;  /* Tamaño de la fuente aumentado */
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background-color:  #fa220a;  /* Fondo rojo para el menú colapsado */
+    }
+  }
+  
+  /* Alineación del contenido a la derecha */
+  .ms-auto {
+    margin-left: auto !important;  /* Alinea a la derecha */
   }
   

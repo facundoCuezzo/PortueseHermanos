@@ -1,0 +1,70 @@
+.Header { 
+    width: 100%; /* Asegura que el fondo cubra todo el ancho */
+    padding: 10px 0;
+  }
+  
+  /* Contenedor del navbar */
+  .navbar-custom {
+    width: 100%;
+  }
+  
+  /* Contenedor de los elementos del navbar */
+  .containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Enlaces alineados a la izquierda */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start; /* Alinea los enlaces a la izquierda */
+  }
+  
+  /* Botón del carrito centrado */
+  .centered-cart {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center;
+  }
+  
+  /* Logo alineado a la derecha */
+  .ms-auto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el logo a la derecha */
+    flex: 5;
+  }
+  
+  /* Estilo del logo */
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo del enlace de navegación */
+  .nav-link {
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .containerHeader {
+      flex-direction: column;
+    }
+  
+    .centered-cart {
+      margin-top: 10px;
+    }
+  
+    .navbar-left, .navbar-right {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  

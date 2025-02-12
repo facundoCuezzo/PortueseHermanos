@@ -1,12 +1,12 @@
-.grid-container {
-    display: flex; /* Cambiado a flexbox */
-    flex-direction: row; /* Para hacer los ítems horizontales */
-    gap: 115px; /* Espacio entre los elementos */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+/* .grid-container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 115px; 
+    justify-content: center; 
+    align-items: center; 
     padding: 60px;
-    max-width: 80%; /* Ajusta según sea necesario */
-    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 80%; 
+    margin: 0 auto; 
   }
   
   .grid-item {
@@ -17,14 +17,69 @@
   }
   
   .grid-item i {
-    font-size: 4rem; /* Tamaño del icono */
+    font-size: 4rem; 
     margin-bottom: 15px;
-    color: #333; /* Color del icono */
+    color: #333; 
   }
   
   .grid-item p,
   .grid-item a {
-    color: #000000; /* Negro */
+    color: #000000; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    font-size: 1rem; 
+    transition: color 0.3s ease-in-out;
+    text-decoration: none; 
+  }
+  
+  .grid-item p:hover,
+  .grid-item a:hover {
+    color: #00d4ff; 
+  }
+   */
+
+   .grid-container {
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Ítems horizontales */
+    gap: 115px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 60px;
+    width: 100%; /* Hace que el contenedor ocupe el ancho total */
+    height: 10%; /* Hace que el contenedor ocupe la altura total */
+    margin: 0; /* Elimina los márgenes */
+    background-color: #fa220a;/* Fondo gris */
+    border-radius:0 px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto del elemento */
+  }
+  
+  /* Elementos de la cuadrícula */
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fa220a;/* Fondo gris para las tarjetas */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s; /* Transición de transformaciones */
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el ratón */
+  }
+  
+  /* Íconos */
+  .grid-item i {
+    font-size: 4rem; /* Tamaño del ícono */
+    margin-bottom: 15px;
+    color: #f4f4f4; /* Color rojo para los íconos */
+  }
+  
+  /* Enlaces y párrafos */
+  .grid-item p,
+  .grid-item a {
+    color:  #fbff05; /* Texto negro */
     font-weight: bold; /* Texto en negrita */
     text-transform: uppercase; /* Texto en mayúsculas */
     font-size: 1rem; /* Tamaño del texto */
@@ -34,6 +89,19 @@
   
   .grid-item p:hover,
   .grid-item a:hover {
-    color: #00d4ff; /* Color celeste brillante al pasar el mouse */
+    color:#3107ec; /* Color rojo al pasar el ratón */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .grid-container {
+      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+      align-items: center;
+    }
+  
+    .grid-item {
+      width: 100%; /* Asegura que las tarjetas ocupen todo el ancho en pantallas pequeñas */
+      margin: 10px 0;
+    }
   }
   

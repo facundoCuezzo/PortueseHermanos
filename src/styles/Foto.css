@@ -1,10 +1,89 @@
-/* Estilos para el contenedor principal */
+/* 
+.foto {
+  position: relative; 
+  width: 100%; 
+  height: 20.5cm; 
+  overflow: hidden; 
+}
+
+
+.foto img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease; 
+}
+
+
+.contenido {
+  position:absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  width: 100%; 
+  padding: 20px; 
+  text-align:center; 
+}
+
+
+.contenido h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px; 
+  text-transform: uppercase;
+}
+
+
+.contenido p {
+  font-size: 1.2rem; 
+  margin-bottom: 20px; 
+  color: #f0f0f0; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
+  line-height: 1.5;
+  width: 50%;  margin: 0 auto; 
+}
+
+
+
+.contenido button {
+  background-color: #ff9900; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 1.1rem; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease-in-out; /
+  margin-top: 20px; 
+}
+
+
+.contenido button:hover {
+  background-color: #cc7a00; 
+}
+ */
+
+ /* Estilos para el contenedor principal */
 .foto {
   position: relative; /* Necesario para posicionar contenido interno */
   width: 100%; /* Ancho del componente */
-  height: 20.5cm; /* Alto del componente */
+  height: 20cm; /* Alto del componente */
   overflow: hidden; /* Oculta el contenido que exceda */
+  margin-top: -15px;
 }
+
+.imagen-zoom {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  transition: transform 0.5s ease; /* Transición suave para el efecto de zoom */
+}
+
+.foto:hover .imagen-zoom {
+  transform: scale(1.1); /* Aplica un zoom del 20% al hacer hover */
+}
+
 
 /* Estilos para la imagen */
 .foto img {
@@ -36,7 +115,7 @@
 .contenido p {
   font-size: 1.2rem; /* Tamaño de fuente ajustado */
   margin-bottom: 20px; /* Espaciado inferior */
-  color: #f0f0f0; /* Color ligeramente más claro */
+  color: #fbff05; /* Color ligeramente más claro */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra de texto suave */
   line-height: 1.5; /* Altura de línea para mejor legibilidad */
   width: 50%; /* Ajuste de ancho para asegurar 3 renglones */ margin: 0 auto; /* Centrar el texto horizontalmente */
@@ -45,8 +124,8 @@
 
 /* Estilos para el botón */
 .contenido button {
-  background-color: #ff9900; /* Color de fondo llamativo */
-  color: white; /* Texto blanco */
+  background-color: #fa220a; /* Color de fondo llamativo */
+  color: #fbff05; /* Texto blanco */
   border: none; /* Sin borde */
   padding: 10px 20px; /* Relleno */
   font-size: 1.1rem; /* Tamaño de fuente ajustado */
@@ -59,5 +138,5 @@
 
 /* Efecto hover para el botón */
 .contenido button:hover {
-  background-color: #cc7a00; /* Fondo más oscuro al pasar el mouse */
+  background-color: rgb(74, 72, 72); /* Fondo más oscuro al pasar el mouse */
 }

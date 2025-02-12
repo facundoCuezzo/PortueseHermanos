@@ -11,7 +11,7 @@ const DescripcionUs = () => {
       
       <div className="servicios-section">
         <div className="servicios-text">
-          <h2 className="titulo-seccion">Nuestros Servicios:</h2>
+          <h2 className="titulo-Calidad">Nuestros Servicios:</h2>
           <ul>
             <li><strong>Fabricación, reparación y venta de elásticos</strong></li>
             <li><strong>Reparación de amortiguadores y frenos</strong></li>
@@ -27,11 +27,12 @@ const DescripcionUs = () => {
         </div>
       </div>
 
-      <h2 className="titulo-seccion">Nuestra Misión:</h2>
+      <h2 className="titulo-seguridad">Nuestra Misión:</h2>
       <p>Ofrecer soluciones mecánicas de la más alta calidad, con un firme compromiso hacia la innovación, la excelencia <p></p>en el servicio y un trato cordial, garantizando la satisfacción total de nuestros clientes.</p>
-      <h2 className="titulo-seccion">Nuestra Visión:</h2>
+      <h2 className="titulo-norte">Nuestra Visión:</h2>
       <p>Ser la empresa líder en el mercado de frenos y elásticos de todo el noroeste argentino, reconocida por nuestra integridad, profesionalismo y dedicación.</p>
     </div>
+    
   );
 }
 

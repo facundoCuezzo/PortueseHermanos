@@ -1,7 +1,6 @@
 import React from 'react';
 import Foto from '../components/box';
 import Scroll from '../components/scroll';
-import SpecializeBody from '../components/SpecializeBody';
 import GalleryServices from '../components/GalleryServices';
 import GoogleMaps from '../components/googleMaps'
 import WpFloat from '../components/WpFloat';
@@ -13,7 +12,7 @@ const HomePage = () => {
     
       <Foto />
       <Scroll />
-      <SpecializeBody />
+      {/*<SpecializeBody /> */}
       <GalleryServices />
       <GoogleMaps />
       <WpFloat />

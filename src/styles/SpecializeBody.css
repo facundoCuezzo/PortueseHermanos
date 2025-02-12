@@ -1,20 +1,20 @@
-/* Contenedor principal */
+/* 
 .specializeBody-contenedor {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 120%;
-    max-width: 1300px; /* Ajusta según sea necesario para el ancho */
-    height: 7cm; /* Altura del contenedor */
-    margin: 3cm auto 20px; /* Añade margen superior de 3cm */
-    background-color: #f5f5f5; /* Fondo claro para destacar el texto */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
-    position: relative; /* Necesario para el pseudo-elemento */
+    max-width: 1300px; 
+    height: 7cm; 
+    margin: 3cm auto 20px; 
+    background-color: #f5f5f5; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: relative; 
   }
   
-  /* Línea divisoria */
+
   .specializeBody-contenedor::before {
     content: '';
     position: absolute;
@@ -26,35 +26,93 @@
     transform: translateX(-50%);
   }
   
+
+  .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.7rem; 
+    font-weight: 700; 
+    margin: 0; 
+    color: #333; 
+    text-align: left; 
+    padding-right: 20px; 
+  }
+  
+ 
+  .descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.1rem; 
+    color: #555; 
+    margin: 0; 
+    text-align: left; 
+    max-width: 100%; 
+    line-height: 1.6; 
+    padding-left: 20px; 
+  }
+  
+  
+  .imagen-descripcion {
+    width: 2cm; 
+    height: 2cm; 
+    object-fit: cover; 
+    margin-left: 10px; 
+  }
+   */
+
+   .specializeBody-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ajusta el ancho al 100% */
+    max-width: 1300px; /* Máximo ancho */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin: 20px auto; /* Centra el contenedor verticalmente y añade margen */
+    background-color:  rgb(74, 72, 72); /* Nuevo color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    position: relative; /* Necesario para el pseudo-elemento */
+    flex-wrap: wrap; /* Permite que los ítems se ajusten */
+  }
+  
+  
   /* Estilos para el título */
   .titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 3; /* Hace el contenedor del título un 30% más ancho */
+    flex: 1; /* Ajusta el tamaño del contenedor del título */
     font-family: 'Raleway', sans-serif; /* Fuente estilizada para el título */
-    font-size: 1.7rem; /* Tamaño de fuente */
+    font-size: 1.8rem; /* Tamaño de fuente */
     font-weight: 700; /* Negrita */
     margin: 0; /* Sin margen */
-    color: #333; /* Color del texto */
-    text-align: left; /* Alineación a la izquierda */
+    color:white; /* Color del texto */
+    text-align: center; /* Alineación a la izquierda */
     padding-right: 20px; /* Espaciado interno para la línea divisoria */
   }
   
   /* Estilos para la descripción */
-  .descripcion {
+  .descripcionBody p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 2; /* Hace el contenedor de la descripción un 20% más ancho */
+    flex: 2; /* Ajusta el tamaño del contenedor de la descripción */
     font-family: 'Open Sans', sans-serif; /* Fuente estilizada para la descripción */
     font-size: 1.1rem; /* Tamaño de fuente */
-    color: #555; /* Color del texto */
+    color:#fbff05; /* Color del texto */
     margin: 0; /* Sin margen */
-    text-align: left; /* Alineación a la izquierda */
+    text-align: center; /* Alineación a la izquierda */
     max-width: 100%; /* Ajusta el ancho para el formato */
     line-height: 1.6; /* Mejorar legibilidad */
     padding-left: 20px; /* Espaciado interno para la línea divisoria */
+    flex-wrap: wrap; /* Permite que los ítems se ajusten */
   }
   
   /* Estilos para la imagen dentro de la descripción */
@@ -63,5 +121,24 @@
     height: 2cm; /* Alto de la imagen */
     object-fit: cover; /* Asegura que la imagen mantenga su proporción */
     margin-left: 10px; /* Espaciado izquierdo para la imagen */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .specializeBody-contenedor {
+      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+      height: auto; /* Ajusta la altura automáticamente */
+      margin: 10px; /* Ajusta el margen para pantallas pequeñas */
+    }
+    
+    .specializeBody-contenedor::before {
+      display: none; /* Oculta la línea divisoria en pantallas pequeñas */
+    }
+  
+    .titulo, .descripcion {
+      width: 100%; /* Asegura que los elementos ocupen todo el ancho en pantallas pequeñas */
+      padding: 10px; /* Ajusta el padding */
+      text-align: center; /* Centra el texto */
+    }
   }
   

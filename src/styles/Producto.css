@@ -1,0 +1,391 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card-body {
+    background-color: #eeecec;
+    color: #3107ec;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 300px;
+}
+
+.descripcion{
+  display: flex;
+  background-color: #fa220a;
+  color:#fbff05;
+  text-align: center;
+}
+
+
+.card-body button {
+  display: flex;  /* Activa el modelo de flexbox */
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body button {
+  background-color: rgb(74, 72, 72);  /* Fondo gris */
+  color:#fbff05; ;  /* Texto amarillo */
+  border: 1px solid black ;
+  border-radius: 5px;  /* Bordes redondeados */
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-top: 10px;
+  justify-content: center;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;  /* Transiciones suaves */
+  justify-content: flex-end;
+}
+
+.card-body button:hover {
+  background-color: red;  /* Fondo rojo al pasar el ratón */
+  color:#fbff05;;  /* Texto blanco al pasar el ratón */
+}
+
+.fixed-size-img {
+  width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: 300px;  /* Altura fija para todas las imágenes */
+  object-fit: cover;  /* Ajusta la imagen para cubrir todo el contenedor sin distorsionarse */
+  object-position: center;  /* Centra la imagen en el contenedor */
+  border-radius: 10px;  /* Bordes redondeados opcionales */
+  
+}
+
+
+
+.etiqueta{
+    width: 100%;
+    max-width: 30%;
+    display: block;
+    height: auto; 
+    border: 2px solid  rgb(74, 72, 72);;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #000000c4;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente al centro */
+    align-items: center; /* Alinea verticalmente al centro */
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+
+  .page-item {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 1px solid  #222;;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .page-item:hover {
+    background-color:#fa220a;
+    color: #fbff05;
+  }
+
+/* Contenedor Flexbox */
+.containerCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Alineación centrada por defecto */
+  justify-content: center;
+  height: 10px;  /* Ajusta la altura automáticamente */
+  width: 100%;  /* Asegura que ocupe todo el ancho de la página */
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño del elemento */
+}
+
+/* Clase para alinear el carrito a la derecha */
+.containerCart.right {
+  align-items: flex-end;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .containerCart {
+    padding: 10px;
+  }
+
+  .containerCart.right {
+    align-items: flex-end;
+    padding-right: 10px;  /* Asegura que el carrito tenga un pequeño margen a la derecha */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .containerCart {
+    padding: 5px;
+  }
+
+  .containerCart.right {
+    align-items: flex-end;
+    padding-right: 5px;  /* Ajusta el margen para pantallas más pequeñas */
+  }
+
+}
+
+/* Estilos para el Título */
+.boxCart h1 {
+  display: flex;
+  color: #3107ec;
+  text-align: center;
+  margin-bottom: 20px;  /* Espacio entre el título y el botón */
+  text-decoration: underline; /* Subrayado */
+}
+
+/* Estilos para el Botón Cart */
+.cart {
+  background-color:  #fa220a;  /* Fondo gris */
+  color: #fbff05;
+  border-radius: 5px;  /* Bordes redondeados */
+  text-decoration: none;
+  padding: 20px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;  /* Transiciones suaves */
+}
+
+.cart:hover {
+  background-color: #fa220a;  /* Fondo rojo al pasar el ratón */
+  color: #fbff05;  /* Texto amarillo al pasar el ratón */
+  transform: scale(1.1);
+}
+
+/* Asegura que ambos sean responsivos */
+@media (max-width: 768px) {
+  .containerCart {
+    padding: 20px;  /* Espacio interno para pantallas pequeñas */
+  }
+
+  .cart {
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+    text-align: center;  /* Centra el texto */
+  }
+
+  .boxCart h1 {
+    font-size: 1.5rem;  /* Tamaño del texto ajustable */
+  }
+}
+
+/* Estilos para la tarjeta */
+.cart_Etiqueta {
+    width: 100%;
+    max-width: 30%;
+    display: block;
+    height: auto; 
+    border: 2px solid  rgb(74, 72, 72);;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #000000c4;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.cart_Etiqueta:hover {
+  transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Imagen fija de tamaño */
+.cart-fixed-size-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px; /* Bordes redondeados superiores */
+  border-top-right-radius: 10px;
+}
+
+/* Cuerpo de la tarjeta */
+.cart_Body {
+  background-color: #eeecec;
+  color: #3107ec;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 300px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .cart_Etiqueta {
+    width: 90%; /* Ocupa el 90% del ancho disponible en pantallas pequeñas */
+    margin: 10px auto; /* Centra la tarjeta y ajusta el margen */
+  }
+}
+
+.cart-close{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  height: 5%; /* Altura completa de la vista */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto del elemento */
+  color: #fa220a;
+  padding: 20px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;  /* Transiciones suaves */
+}
+
+
+
+
+/* Contenedor del carrito */
+.cart-container {
+  padding: 10px;
+}
+
+/* Contenedor de los productos del carrito */
+.cart-items {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+  gap: 50px; /* Espacio entre los productos */
+}
+
+/* Estilo de cada producto en el carrito */
+.cart_Etiqueta {
+  flex: 1 1 calc(30% - 30px); /* Toma un tercio del ancho del contenedor menos el gap */
+  max-width: calc(30% - 30px); /* Asegura que no se exceda el ancho */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño del elemento */
+}
+
+/* Imagen fija de tamaño */
+.cart-fixed-size-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Cuerpo de la tarjeta */
+.cart_Body {
+  padding: 10px;
+}
+
+/* Botón del carrito */
+.cart {
+  margin-top: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .cart_Etiqueta {
+    flex: 1 1 calc(50% - 20px); /* Toma la mitad del ancho del contenedor menos el gap */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .cart_Etiqueta {
+    flex: 1 1 100%; /* Toma el ancho completo del contenedor */
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Título subrayado */
+.cart-close h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color:  #3107ec; /* Color rojo */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  text-decoration: underline; /* Subrayado */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilos para el botón de cerrar del carrito */
+.cart-close button {
+  background-color: #fa220a ;  /* Fondo gris */
+  color:#fbff05;
+  border: 1px solid rgb(166, 163, 163);
+  border-radius: 5px;  /* Bordes redondeados */
+  text-decoration: none;
+  padding: 20px 30px;
+  margin-top: 0px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;  /* Transiciones suaves */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .cart-close {
+    padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  .cart-close h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
+
+  .cart-close button {
+    padding: 15px 20px; /* Ajusta el padding para el botón en pantallas pequeñas */
+  }
+}
+
+
+
+.cart:hover {
+  background-color: #ff1a1a; /* Fondo rojo más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Agranda el botón al pasar el ratón */
+}
+
+
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .cart_Etiqueta {
+    width: 90%; /* Ocupa el 90% del ancho disponible en pantallas pequeñas */
+    margin: 10px auto; /* Centra la tarjeta y ajusta el margen */
+  }
+
+  .cart {
+    width: 100%; /* Botón ocupa todo el ancho disponible */
+    margin: 10px 0; /* Ajusta el margen para pantallas pequeñas */
+  }
+
+  .styled-button {
+    width: 100%; /* Botón ocupa todo el ancho disponible */
+    margin: 10px 0; /* Ajusta el margen para pantallas pequeñas */
+  }
+}
+
+.cart-container h2 { 
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fbff05; /* Color rojo */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  text-decoration: underline; /* Subrayado */
+  text-align: center; /* Centra el texto */
+}
+
+  
+  
+  

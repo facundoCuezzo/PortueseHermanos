@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
     background: #333;
     color: #fff;
     padding: 30px 0;
@@ -48,7 +48,7 @@
   }
   
   .footer .links ul li a:hover {
-    color: #00d4ff; /* Color celeste brillante */
+    color: #00d4ff; 
   }
   
   .footer .social-links a {
@@ -60,7 +60,7 @@
   }
   
   .footer .social-links a:hover {
-    color: #00d4ff; /* Color celeste brillante */
+    color: #00d4ff; 
    
   }
   
@@ -75,3 +75,109 @@
     padding: 35px;
  }
 
+ */
+ .footer {
+  background: rgb(166, 163, 163);
+  color: #fffb05;
+  padding: 15px 0; /* Reduce el padding para ocupar menos espacio */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenido del footer */
+.footer .footer-content {
+  background-color: rgb(74, 72, 72);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 15px; /* Reduce el padding para ajustar el contenido */
+}
+
+/* Secciones del footer */
+.footer .footer-section {
+  flex: 1;
+  margin: 10px;
+  padding: 10px; /* Reduce el padding para ocupar menos espacio */
+}
+
+/* Texto del logo */
+.footer .logo-text {
+  color: #f4f4f4;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Íconos de contacto */
+.footer .contact i {
+  margin-right: 10px;
+}
+
+/* Sección de contacto */
+.footer .contact {
+  margin: 10px 0; /* Reduce el margen para ajustar el contenido */
+  line-height: 1.8;
+}
+
+/* Lista de enlaces */
+.footer .links ul {
+  list-style: none;
+  padding: 0; /* Elimina el padding de la lista */
+}
+
+/* Elementos de la lista de enlaces */
+.footer .links ul li {
+  margin: 5px 0; /* Reduce el margen entre los elementos */
+}
+
+/* Enlaces */
+.footer .links ul li a {
+  color: #fbff05;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .links ul li a:hover {
+  color: #fa220a; /* Color rojo al pasar el ratón */
+}
+
+/* Enlaces de redes sociales */
+.footer .social-links a {
+  display: inline-block;
+  margin: 0 5px; /* Reduce el margen entre los enlaces */
+  text-decoration: none;
+  color: #fbff05;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #fa220a; /* Color rojo al pasar el ratón */
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+  background: rgb(166, 163, 163);
+  color: #fa220a;
+  padding: 10px 0; /* Reduce el padding para ocupar menos espacio */
+  text-align: center;
+}
+
+/* Texto dentro del footer */
+.footer p {
+  color: #fdff05;
+  padding: 20px; /* Reduce el padding para ajustar el contenido */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  .footer .footer-section {
+    margin: 10px 0; /* Ajusta el margen para pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+  }
+}

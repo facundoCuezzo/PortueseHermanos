@@ -9,7 +9,7 @@ const GalleryProduct = () => {
 
   return (
     <>
-    <Header/> 
+   
     <Product/> 
     <Scroll/> 
     </>

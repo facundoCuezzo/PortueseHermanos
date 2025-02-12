@@ -22,7 +22,7 @@ const CustomNavbar = () => {
             {/* Enlaces alineados a la derecha */}
             <Nav className="ms-auto">
               <Nav.Link as={NavLink} to="/" className="nav-link">Inicio</Nav.Link>
-              <Nav.Link as={NavLink} to="/productos" className="nav-link">Productos</Nav.Link>
+          {/* <Nav.Link as={NavLink} to="/productos" className="nav-link">Productos</Nav.Link> */}
               <NavDropdown title="Servicios" id="basic-nav-dropdown">
                 <NavDropdown.Item as={NavLink} to="/reparacion-venta-elasticos" className="nav-link">Reparación y venta de elásticos</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/alineado-balanceo" className="nav-link">Alineado y Balanceo</NavDropdown.Item>

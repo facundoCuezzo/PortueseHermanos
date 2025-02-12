@@ -1,3 +1,4 @@
+{/* 
 import React, { useState, useRef, useEffect } from "react";
 
 import { Link } from "react-router-dom"; 
@@ -203,7 +204,7 @@ Muestra un mensaje si el carrito está vacío.
 Muestra los productos en el carrito con sus detalles.
 
 Incluye botones para eliminar o comprar productos.
-      */
+      
     );
   };
   
@@ -295,3 +296,5 @@ Incluye botones para eliminar o comprar productos.
 };// en todo esto se muesta la lista de productos o el carrito, si show es verdadero se muestra el carrito, sino se muestra la lista de productos.
 
 export default Product;
+
+*/}

@@ -9,17 +9,17 @@
     display: flex;
     transition: transform 0.5s ease-in-out;
     list-style: none;
-    padding: 10px;
+    padding: 4px;
     margin-top: .3cm;
     width: max-content;
 }
 
 .brand-carousel li {
     flex: 0 0 calc(160px + 10px); 
-    margin-right: 80px; 
+    margin-right: 100px; 
 }
 
 .brand-carousel img {
-    max-width: 120px; 
+    max-width: 90px; 
     height: auto;
 }

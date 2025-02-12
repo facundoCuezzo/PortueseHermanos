@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/AlineadoBalanceo.css';
-import logoAlineado from '../assets/empleado1.jpg';
+import empleado1 from '../assets/empleado1.jpg';
 
 const AlineadoBalanceo = () => {
   return (
@@ -32,7 +32,7 @@ const AlineadoBalanceo = () => {
           </ul>
         </div>
         <div className="col-md-6 text-center">
-          <img src={logoAlineado} alt="Nuestros Servicios" className="alineado-img" />
+          <img src={empleado1} alt="Nuestros Servicios" className="alineado-img" />
         </div>
       </div>
       
